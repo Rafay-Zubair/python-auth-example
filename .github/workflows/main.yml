@@ -17,9 +17,9 @@ jobs:
 
     - name: Push Image to DockerHub
       uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+      with:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
-      run: docker push gillrafay/python-auth-app:v1.0
+    - run: docker push gillrafay/python-auth-app:v1.0
     
