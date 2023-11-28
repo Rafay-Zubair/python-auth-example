@@ -10,6 +10,8 @@ from flask_admin import helpers as admin_helpers
 
 
 # Create Flask application
+
+# Testing the CI/CD
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 db = SQLAlchemy(app)
